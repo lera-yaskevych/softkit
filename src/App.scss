@@ -1,3 +1,80 @@
-.starter {
-  font-size: 18px;
+.App {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+
+  &__square {
+    height: 150px;
+    font-size: 18px;
+    border: 2px solid #fff;
+
+    &--1 {
+      background-color: #d39e59;
+    }
+
+    &--2 {
+      background-color: #dd69c6;
+    }
+
+    &--3 {
+      background-color: #72da53;
+    }
+
+    &--4 {
+      background-color: #d35047;
+    }
+
+    &--5 {
+      background-color: #d6519a;
+    }
+
+    &--6 {
+      background-color: #cfc647;
+    }
+
+    &--blue {
+      background-color: #6288db;
+    }
+
+    &--selected {
+      border: 5px solid #f1a33c;
+    }
+  }
+
+  &__button {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    padding: 10px 20px;
+    height: min-content;
+    width: max-content;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: #6288db;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #7f9bd6;
+    }
+  }
+
+  &__message {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 3px;
+
+    &--error {
+      background-color: #ffb9b4;
+      border: 2px solid #dd6a62;;
+    }
+
+    &--success {
+      background-color: #76e497;
+      border: 2px solid #5dc96f;
+    }
+  }
 }
